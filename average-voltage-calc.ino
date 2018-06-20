@@ -22,7 +22,7 @@ int loopNum; //declaring average voltage calculation variables
 double avgVol,volSum;
 
 void setup() {
-for(int apin=0;apin<6;apin++) //there are six(6) analog pins in arduino uno
+for(int apin=A0;apin<=A5;apin++) //there are six(6) analog pins in arduino uno
 pinMode(apin,INPUT); //initializing to read voltage from analog pins
 
 loopNum=1;
@@ -42,7 +42,7 @@ Serial.print("Current average voltage: ");
 Serial.print(avgVol);
 Serial.println("V");
 
-for(int apin=0;apin<6;apin++)
+for(int apin=A0;apin<=A5;apin++)
 {
 double apinVol=analogRead(apin);
 apinVol*=5; apinVol/=1023;  //conversion of the voltage to its decimal value
