@@ -74,11 +74,3 @@ loopNum++;
 Serial.println("");
 delay(1000); //reading interval, change it for faster/slower data reading
 }
-
-}
-
-else
-Serial.println("Perfect voltage!");
-
-volSum+=apinVol;
-}
