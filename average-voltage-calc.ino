@@ -44,7 +44,7 @@ Serial.println("V");
 for(int apin=A0;apin<=A5;apin++)
 {
 double apinVol=analogRead(apin);
-apinVol=map(apinVol,0,1023,0,5);  //conversion of the voltage to the standard
+apinVol=map(apinVol, 0,1023, 0,5);  //conversion of the voltage to the standard
 
 Serial.print("Pin #A");
 Serial.print(apin);
