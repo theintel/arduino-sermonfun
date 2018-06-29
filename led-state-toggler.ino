@@ -17,18 +17,17 @@
 */
 
 
-int LEDPin = 13;
+int LEDPin = LED_BUILTIN;
 int count = 0;
 bool LEDstat=0;
 
 void setup() {
 	pinMode(LEDPin, OUTPUT); 	//Set led pin to output
 	Serial.begin(9600); //Set serial to the 9600 band
-	if(Serial){
+	while(!Serial)
+	continue;
 	Serial.println("Enter Y/y to turn on the LED");
-   Serial.println("Enter N/n to turn off the LED");
-   }
-   
+   	Serial.println("Enter N/n to turn off the LED");
 }
 
 void loop(){
