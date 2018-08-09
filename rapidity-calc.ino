@@ -86,7 +86,7 @@ Serial.print("Your average speed is ");
 Serial.print(avgSpeed);
 Serial.println(" presses per second.");
 
-delay(500); //wait for 0.5s to let arduino transmit the data
+Serial.flush(); //let the arduino transmit the data
 exit(0); //avoid counting further by terminating the program
 }
 
