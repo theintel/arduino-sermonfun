@@ -69,7 +69,7 @@ volSum+=apinVol;
 }
 
 
-avgVol=volSum/(6*loopNum);
+avgVol=volSum/(6.0*(double)loopNum);
 loopNum++;
 Serial.println("");
 delay(1000); //reading interval, change it for faster/slower data reading
