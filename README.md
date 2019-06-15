@@ -1,4 +1,4 @@
-# arduino-sermonfun
+<p align="center"><b>Arduino-SerMonFun</b></p>
 
 Interesting codes for playing around with arduino serial monitor.
 
