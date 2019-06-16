@@ -1,4 +1,5 @@
 # arduino-sermonfun
+<marquee behavior="alternate">Arduino Fun</marquee>
 
 Interesting codes for playing around with arduino serial monitor.
 
